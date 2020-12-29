@@ -1,4 +1,4 @@
-**Status:** Maintenance (expect bug fixes and additional algorithms)
+**Status:** Maintenance (expect potential new awesomeness and stuff)
 
 <img src="logo.png" width=50% align="right" /> 
 
