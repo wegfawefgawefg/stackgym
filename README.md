@@ -3,7 +3,7 @@
 <img src="logo.png" width=50% align="right" /> 
 
 # StackGym
-Are you an avid deep reinforcement learning learner
+Are you an avid deep reinforcement learning learner?
 Are you tired of rolling your own framestacking util for openai-gym?
 Be tired no longer my friend. Introducing, the NEW StackGym wrapper class. 
 
