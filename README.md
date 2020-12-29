@@ -15,7 +15,7 @@ By choosing StackGym you made life easy for yourself. Good job.
     -Please check example.py for an example state formatter function and usage.
 
 ## Prerequisites 
-Baselines requires python3, pytorch, and openai-gym, numpy.
+StackGym requires python3, pytorch, and openai-gym, numpy.
 Know what aigym is...
 
 ## Installation
