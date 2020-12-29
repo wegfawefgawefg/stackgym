@@ -12,7 +12,12 @@ and presto, the StackGym wrapper class will automagically give you stacks of fra
 
 By choosing StackGym you made life easy for yourself. Good job.
 
-    -Please check example.py for an example state formatter function and usage.
+## Features
+    -unlike aigym's 'FrameStack', StackGym can provide a stack with noncontiugous frames from a contiguous frame env.
+    -unlike aigym's 'FrameStack', StackGym supports color images.
+    -unlike aigym's 'FrameStack', StackGym lets you format the frames before they are stacked, so you don't have to unstack;format;restack.
+    -unlike aigym's 'FrameStack', StackGym has simpler code.
+    -unlike aigym's 'FrameStack', StackGym may add new handy features in the future.
 
 ## Prerequisites 
 StackGym requires python3, pytorch, and openai-gym, numpy.
@@ -90,3 +95,5 @@ if __name__ == '__main__':
     expose all gym functions via meta python magic
 '''
 ```
+
+ -check example.py for this information offline
