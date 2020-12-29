@@ -16,7 +16,7 @@ By choosing StackGym you made life easy for yourself. Good job.
 ## Features
 Unlike aigym's 'FrameStack', which sucks, StackGym:
 
-    -can provide a stack with noncontiugous frames from a contiguous frame env
+    -can provide a stack with noncontigous frames from a contiguous frame env
     -supports color images
     -lets you format the frames before they are stacked, so you don't have to unstack then format then restack...???
     -has simpler code
