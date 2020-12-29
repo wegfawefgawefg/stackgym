@@ -1,10 +1,11 @@
-**Status:** Maintenance (expect bug fixes and additional algorithms)
+**Status:** Maintenance (expect potential new awesomeness and stuff)
 
 <img src="logo.png" width=50% align="right" /> 
 
 # StackGym
-Are you an avid deep reinforcement learning learner
+Are you an avid deep reinforcement learning learner?
 Are you tired of rolling your own framestacking util for openai-gym?
+Did you not know about aigym's FrameStack wrapper? (which sucks btw.) 
 Be tired no longer my friend. Introducing, the NEW StackGym wrapper class. 
 
 Just provide a state formatter function in case you want to monochrome or shrink your input images, 
@@ -12,11 +13,17 @@ and presto, the StackGym wrapper class will automagically give you stacks of fra
 
 By choosing StackGym you made life easy for yourself. Good job.
 
-    -Please check example.py for an example state formatter function and usage.
+## Features
+Unlike aigym's 'FrameStack', which sucks, StackGym:
+
+    -can provide a stack with noncontigous frames from a contiguous frame env
+    -supports color images
+    -lets you format the frames before they are stacked, so you don't have to unstack then format then restack...???
+    -has simpler code
+    -may add new handy features in the future
 
 ## Prerequisites 
-Baselines requires python3, pytorch, and openai-gym, numpy.
-Know what aigym is...
+StackGym requires python3, and numpy. You probably want aigym too, and there's some skimage in the example.
 
 ## Installation
 - Clone the repo or download stack_gym.py and drop it wherever you need it!
@@ -90,3 +97,5 @@ if __name__ == '__main__':
     expose all gym functions via meta python magic
 '''
 ```
+
+ -check example.py for this information offline
