@@ -3,26 +3,11 @@ from collections import deque
 import numpy as np
 import gym
 
-'''TODO:
-    expose observation space
-    expose state space
-    expose all gym functions via meta python magic
-'''
-
 class StackGym:
-    ''' Are you tired of rolling your own framestacking util for openai-gym?
-        Be tired no longer my friend. Introducing, the NEW StackGym wrapper class. 
-        
-        Just provide a state formatter function in case you want to monochrome or shrink your input images, 
-        and presto, the StackGym wrapper class will automagically give you stacks of frames to work with.
-
-        By choosing StackGym you made life easy for yourself. Good job.
-        
-            -Please check example.py for an example state formatter function and usage.
-        '''
     def __init__(self, env, frame_stack_size, 
             frame_skip_size=1, state_formatter=None, grayscale=False):
         '''
+        -check example.py for state_formatter example
         -set grayscale=True if it is 1 channel image data
         -set grayscale=False if it is 3 channel rgb images
         '''
