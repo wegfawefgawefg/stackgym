@@ -1,35 +1,9 @@
-**Status:** Maintenance (expect bug fixes and additional algorithms)
+import numpy as np
+from PIL import Image
+import skimage.measure
 
-<img src="logo.png" width=50% align="right" /> 
-
-# StackGym
-Are you an avid deep reinforcement learning learner
-Are you tired of rolling your own framestacking util for openai-gym?
-Be tired no longer my friend. Introducing, the NEW StackGym wrapper class. 
-
-Just provide a state formatter function in case you want to monochrome or shrink your input images, 
-and presto, the StackGym wrapper class will automagically give you stacks of frames to work with.
-
-By choosing StackGym you made life easy for yourself. Good job.
-
-    -Please check example.py for an example state formatter function and usage.
-
-## Prerequisites 
-Baselines requires python3, pytorch, and openai-gym, numpy.
-Know what aigym is...
-
-## Installation
-- Clone the repo or download stack_gym.py and drop it wherever you need it!
-
-## Use
-
-### Step 1: Import
-```python
 from stack_gym import StackGym
-```
 
-### Step 2: Make A Frame Formatter
-```python
 ''' This is an example state formatter function. This will go between your environment and the buffer.'''
 def squash_frame(state):
     state = state/255.0                                             #   normalize pixel values
@@ -49,10 +23,7 @@ def squash_frame(state):
     '''     NON CONV        '''
     # state = state.flatten()                                       #   if for some reason you have a non convolutional network
     return state
-```
 
-### Step 3: Make A StackGym and use it like its a regular gym. Wow!
-```python
 ''' This is an example training loop.'''
 if __name__ == '__main__':
     FRAME_STACK_SIZE = 4
@@ -80,13 +51,3 @@ if __name__ == '__main__':
             agent.learn()
 
             state = state_
-```
-
-## Future Features
-```python
-'''TODO:
-    expose observation space
-    expose state space
-    expose all gym functions via meta python magic
-'''
-```
