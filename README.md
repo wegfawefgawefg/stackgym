@@ -5,6 +5,7 @@
 # StackGym
 Are you an avid deep reinforcement learning learner?
 Are you tired of rolling your own framestacking util for openai-gym?
+Did you not know about aigym's FrameStack wrapper? (which sucks btw.) 
 Be tired no longer my friend. Introducing, the NEW StackGym wrapper class. 
 
 Just provide a state formatter function in case you want to monochrome or shrink your input images, 
