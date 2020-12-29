@@ -24,7 +24,6 @@ Unlike aigym's 'FrameStack', which sucks, StackGym:
 
 ## Prerequisites 
 StackGym requires python3, pytorch, and openai-gym, numpy.
-Know what aigym is...
 
 ## Installation
 - Clone the repo or download stack_gym.py and drop it wherever you need it!
